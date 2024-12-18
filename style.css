@@ -1,0 +1,112 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f4f4f4;
+}
+
+.calculator {
+  width: 320px;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+  text-align: center;
+}
+
+#display {
+  padding: 20px;
+  background-color: #222;
+  color: #fff;
+  font-size: 2em;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  min-height: 120px;
+}
+
+.operation {
+  font-size: 1.2em;
+  opacity: 0.7;
+}
+
+.result {
+  font-size: 2.5em;
+  word-wrap: break-word;
+}
+
+.buttons {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+  padding: 20px;
+}
+
+button {
+  padding: 20px;
+  font-size: 1.5em;
+  border: none;
+  background-color: #f1f1f1;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #ddd;
+}
+
+button:active {
+  background-color: #ccc;
+}
+
+button#clear {
+  background-color: #ff6666;
+  color: white;
+}
+
+button#equal {
+  background-color: #4caf50;
+  color: white;
+}
+
+button.theme-toggler {
+  margin-top: 20px;
+  padding: 10px 20px;
+  font-size: 1em;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button.theme-toggler.active {
+  background-color: #28a745;
+}
+
+.hidden {
+  display: none;
+}
+
+.dark {
+  background-color: #333;
+  color: white;
+}
+
+.dark #display {
+  background-color: #555;
+}
+
+.dark button {
+  background-color: #444;
+  color: white;
+}
+
+.dark button:hover {
+  background-color: #666;
+}
